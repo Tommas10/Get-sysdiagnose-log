@@ -15,6 +15,8 @@ It can take up to 10 minutes to complete and there are no visual indicators that
 
 Be patient and continue with whatever work you were doing. The report will contain tons of logs, system statistics, and other diagnostic information. 
 
+Note: On all systems, the device will become unresponsive during parts of generating the sysdiagnose and the generated .tar.gz will usually be around 200-300 MB.
+
 What sysdiagnose collects: 
 
 1.A spindump of the system. 

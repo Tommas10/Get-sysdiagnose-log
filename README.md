@@ -11,6 +11,10 @@ Without it, the person on the other end of your report inside Apple may not be o
 On macOS, sysdiagnose is fairly well-documented. 
 You can run it from the command line via sudo sysdiagnose, which will place the resulting .tar.gz file in /var/tmp/.
 
+It can take up to 10 minutes to complete and there are no visual indicators that anything is happening. 
+
+Be patient and continue with whatever work you were doing. The report will contain tons of logs, system statistics, and other diagnostic information. 
+
 What sysdiagnose collects: 
 
 1.A spindump of the system. 

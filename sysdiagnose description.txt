@@ -1,0 +1,42 @@
+
+sysdiagnose(1)            BSD General Commands Manual           sysdiagnose(1)
+
+NAME
+     sysdiagnose -- gathers system-wide diagnostic information helpful in
+     investigating system performance issues
+
+SYNOPSIS
+     sysdiagnose -h
+     sysdiagnose [-f results_directory] [-A archive_name] [-V volume_path]
+                 [-n] [-k] [-F] [-S] [-u] [-Q] [-b] [-p] [-P] [-d] [-D] [-r]
+                 [-R] [process_name | pid]
+
+DESCRIPTION
+     The sysdiagnose tool gathers system diagnostic information helpful in
+     investigating system performance issues.  A great deal of information is
+     harvested, spanning system state and configuration. The data is stored
+     /var/tmp directory.  sysdiagnose needs to be run as root. To cancel an
+     in-flight sysdiagnose triggered via command line interface, press Ctrl-\.
+     sysdiagnose is automatically triggered when the following key chord is
+     pressed: Control-Option-Command-Shift-Period.
+
+   What sysdiagnose collects:
+           o   A spindump of the system
+           o   Several seconds of fs_usage ouput
+           o   Several seconds of top output
+           o   Data about kernel zones
+           o   Status of loaded kernel extensions
+           o   Resident memory usage of user processes
+           o   Recent system logs
+           o   A System Profiler report
+           o   Recent crash reports
+           o   Disk usage information
+           o   I/O Kit registry information
+           o   Network status
+           o   If a specific process is supplied as an argument: list of mal-
+               loc-allocated buffers in the process's heap is collected
+           o   If a specific process is supplied as an argument: data about
+               unreferenced malloc buffers in the process's memory is col-
+               lected
+           o   If a specific process is supplied as an argument: data about
+               the virtual memory regions allocated in the process
